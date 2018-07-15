@@ -27,8 +27,10 @@ module.exports.routes = {
   '/': {
     view: 'pages/homepage'
   },
-
+  '/usuario/login': 'UsuarioController.login',
+  '/SistemaOperativo/:id/Aplicaciones': 'SistemaOperativoController.devolver_apps',
   /***************************************************************************
+   *
   *                                                                          *
   * More custom routes here...                                               *
   * (See https://sailsjs.com/config/routes for examples.)                    *
